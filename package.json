@@ -1,0 +1,45 @@
+{
+	"name": "GenericReactNativeReduxApp",
+	"version": "0.0.1",
+	"description": "Generic starting project for a react-native-redux application.",
+	"author": "Kyle Williamson",
+	"license": "MIT",
+	"scripts": {
+		"start": "react-native start --root .",
+		"lint": "eslint src && flow",
+		"test": "yarn lint && jest --coverage",
+		"android": "react-native run-android",
+		"ios": "react-native run-ios",
+		"wpf": "react-native run-wpf",
+		"uwp": "react-native run-windows"
+	},
+	"dependencies": {
+		"immutable": "4.0.0-rc.2",
+		"react": "16.0.0-alpha.12",
+		"react-native": "0.45.0",
+		"react-native-windows": "0.45.0-rc.1",
+		"react-redux": "^5.0.5",
+		"redux": "^3.7.1",
+		"redux-actions": "^2.2.1",
+		"redux-thunk": "^2.2.0"
+	},
+	"devDependencies": {
+		"babel-eslint": "^7.2.3",
+		"babel-jest": "21.0.2",
+		"babel-preset-react-native": "3.0.2",
+		"eslint": "3.19.0",
+		"eslint-config-airbnb": "^15.0.2",
+		"eslint-config-airbnb-base": "^11.2.0",
+		"eslint-plugin-compat": "^1.0.4",
+		"eslint-plugin-flowtype": "^2.34.1",
+		"eslint-plugin-import": "^2.7.0",
+		"eslint-plugin-jsx-a11y": "5.1.1",
+		"eslint-plugin-react-native": "^3.1.0",
+		"jest": "21.0.2",
+		"react-test-renderer": "16.0.0-alpha.12",
+		"rnpm-plugin-windows": "^0.2.7"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
