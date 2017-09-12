@@ -5,13 +5,13 @@
 	"author": "Kyle Williamson",
 	"license": "MIT",
 	"scripts": {
-		"start": "react-native start --root .",
+		"start": "node node_modules/react-native/local-cli/cli.js start --root .",
 		"lint": "eslint src && flow",
 		"test": "yarn lint && jest --coverage",
-		"android": "react-native run-android",
-		"ios": "react-native run-ios",
-		"wpf": "react-native run-wpf",
-		"uwp": "react-native run-windows"
+		"android": "node node_modules/react-native/local-cli/cli.js run-android",
+		"ios": "node node_modules/react-native/local-cli/cli.js run-ios",
+		"wpf": "node node_modules/react-native/local-cli/cli.js run-wpf",
+		"uwp": "node node_modules/react-native/local-cli/cli.js run-windows"
 	},
 	"dependencies": {
 		"immutable": "4.0.0-rc.2",
